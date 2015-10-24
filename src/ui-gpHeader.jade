@@ -1,2 +1,8 @@
 mixin ui-gpHeader
-	header.ui-gpHeader GP Header
+	header.ui-gpHeader
+		block
+
+mixin ui-gpHeader-title(options)
+	div.ui-gpHeader-title
+		a.ui-gpHeader-title-link(href=options.url)
+			block
