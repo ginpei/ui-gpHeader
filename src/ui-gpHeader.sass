@@ -20,8 +20,30 @@ $ui-gpHeader-height: 20px
 	:link,
 	:visited
 		color: inherit
+	:link:hover
+		text-decoration: underline
 
 	&-title
 		color: $ui-gpHeader-color-text-strong
 		font-weight: bold
 		margin-left: 1em
+
+	&-contentArea
+		float: right
+		margin-top: -$ui-gpHeader-height
+
+	&-group
+		display: inline-block
+		position: relative
+		margin-right: 1em
+		margin-left: 1em
+
+		&-title
+
+		&-linkList
+			position: absolute
+			top: 100%
+			right: 0
+
+	&-link
+		display: block
