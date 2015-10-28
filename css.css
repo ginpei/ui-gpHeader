@@ -25,15 +25,24 @@
     margin-top: -20px; }
   .ui-gpHeader-group {
     display: inline-block;
-    position: relative;
+    margin-left: 1em;
     margin-right: 1em;
-    margin-left: 1em; }
+    position: relative; }
+    .ui-gpHeader-group-title {
+      cursor: default; }
     .ui-gpHeader-group-linkList {
+      background-color: #006;
+      border: 1px solid #ccc;
+      display: none;
       position: absolute;
-      top: 100%;
-      right: 0; }
+      right: 0;
+      top: 100%; }
+    .ui-gpHeader-group:hover .ui-gpHeader-group-linkList {
+      display: block; }
   .ui-gpHeader-link {
-    display: block; }
+    display: block;
+    padding: 0.2em 1em;
+    white-space: nowrap; }
 
 body {
   font-family: verdana,arial,helvetica,sans-serif;

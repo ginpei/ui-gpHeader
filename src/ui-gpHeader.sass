@@ -1,4 +1,5 @@
 $ui-gpHeader-color-base: #006
+$ui-gpHeader-color-border: #ccc
 $ui-gpHeader-color-text-strong: #fff
 $ui-gpHeader-color-text: #ccc
 $ui-gpHeader-height: 20px
@@ -39,11 +40,19 @@ $ui-gpHeader-height: 20px
 		position: relative
 
 		&-title
+			cursor: default
 
 		&-linkList
+			background-color: $ui-gpHeader-color-base
+			border: 1px solid $ui-gpHeader-color-border
+			display: none
 			position: absolute
 			right: 0
 			top: 100%
+		&:hover &-linkList
+			display: block
 
 	&-link
 		display: block
+		padding: 0.2em 1em
+		white-space: nowrap
