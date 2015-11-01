@@ -4,7 +4,7 @@ mixin ui-gpHeader
 
 mixin ui-gpHeader-title(options)
 	div.ui-gpHeader-title
-		a.ui-gpHeader-title-link(href=options.url)
+		a.ui-gpHeader-title-link(href=options.url)(tabindex=-1)
 			block
 
 mixin ui-gpHeader-contentArea
@@ -24,5 +24,5 @@ mixin ui-gpHeader-group-item(options)
 	if typeof options === 'string'
 		- options = { url:options }
 
-	a.ui-gpHeader-link(href=options.url)
+	a.ui-gpHeader-link(href=options.url)(tabindex=-1)
 		block
