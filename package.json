@@ -2,7 +2,7 @@
   "private": true,
   "dependencies": {
     "jade": "^1.11.0",
-    "node-sass": "^3.3.3"
+    "node-sass": "^4.5.2"
   },
   "scripts": {
     "start": "npm run html; npm run css",
